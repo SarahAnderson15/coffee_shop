@@ -13,6 +13,8 @@ h2{
 a{
     color:#ebdcbf;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    
 }
  #logo{
     align-content: center;
@@ -30,9 +32,10 @@ a{
     position: relative;
     list-style: none;
     height: 50px;
-    /* margin-left: -20px; */
     font-size: 36px;
     text-decoration: none;
+    margin-right:20px;
+    margin-left: 20px;
 }
 .menu {display: flex;}
 .menu li {padding-left: 30px;}
@@ -107,13 +110,13 @@ a{
 #menus{
     justify-content: center;
 }
-.product-list {
+.product-list, .pmenus {
  display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
-.product {
+.product, .menu-cta {
   flex: 1 1 30%;
   padding: 10px;
   max-width: 650px;
