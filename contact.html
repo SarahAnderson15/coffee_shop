@@ -9,19 +9,21 @@
     </head>
     <body>
         <header>
-            <img id="logo" src="assets/the_mud_house_logo.png" width="300px" height="auto" >
             <nav>
-                <ul class="nav-bar">
+                <div id="logo">
+                <img src="assets/the_mud_house_logo.png" width="300px" height="auto" >
+                </div>
+                <div class="nav-bar">
                   <input type="checkbox" id="check">
-                  <span class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="category.html">category</a></li>
-                    <li><a href="products.html">Products</a></li>
+                  <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="category.html">Category</a>
+                    <a href="products.html">Products</a>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                  </span>
+                  </div>
                   <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            </ul> 
+                </div> 
             </nav>
         </header>
         <section id="opening_hours">
@@ -38,13 +40,29 @@
             <p>Saturday: 7:00 - 19:30</p>
             <p>Sunday: 7:00 - 19:30</p>
         </section>
+        <div>
         <h2>Have a question or feedback? Get in touch</h2>
         <p>Email: contact@mudhouse.com</p>
         <p>Tel: +44 7894757329</p>
-        <form>
-            
-        </form>
-        <footer>
+        </div>
+        <div>
+        <form action="/submit-form" method="post">
+          <h3>Get in touch</h3>
 
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Your name" required >
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Your email" required>
+          <br>
+          <label for="message">Message:</label>
+          <textarea name="message" rows="6" cols="50" placeholder="Write your message..." required></textarea>
+          <br>
+          <button type="submit">Send</button>
+        </form>
+        </div>
+        <!-- footer -->
+        <footer>
+        <p> &copy; 2025 The Mud House Coffe Shop. All rights reserved</p>
         </footer>
     </body>
