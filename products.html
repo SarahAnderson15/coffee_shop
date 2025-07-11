@@ -10,21 +10,58 @@
     <body>
         <header>
             <nav>
-                <img id="logo" src="assets/the_mud_house_logo.png" width="300px" height="auto" >
-                <ul class="nav-bar">
+                <div id="logo">
+                <img src="assets/the_mud_house_logo.png" width="300px" height="auto" >
+                </div>
+                <div class="nav-bar">
                   <input type="checkbox" id="check">
-                  <span class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="category.html">category</a></li>
-                    <li><a href="products.html">Products</a></li>
+                  <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="category.html">Category</a>
+                    <a href="products.html">Products</a>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                  </span>
+                  </div>
                   <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            </ul> 
+                </div> 
             </nav>
         </header>
+        <main>
+           <script src="script.js"></script>
+          <section class="product-list">
+            <div class="product" data-id="1" data-name="Morning Mud" data-price="12.50">
+              <img class="product-img" src="assets/morning_roast_bag.png" alt="coffee beans pack for morning mud"/>
+              <h2>Morning Mud Blend</h2>
+              <p>Our signature dark roast, full bodied, earthy.</p>
+              <p>£12.50</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="1" data-name="Campfire Drip" data-price="12.50">
+              <img class="product-img" src="assets/campfire_drip_bag.png" alt="coffee beans pack for campfire drip"/>
+              <h2>Campfire Drip Blend</h2>
+              <p>Medium roast with toasted caramel notes.</p>
+              <p>£12.50</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+              <div class="product" data-id="1" data-name="Sunrise Slit" data-price="12.50">
+              <img class="product-img"src="assets/sunrise_slit_bag.png" alt="coffee beans pack for sunrise slit"/>
+              <h2>Sunrise Slit Blend</h2>
+              <p>The Lightest we make roast with citrus notes.</p>
+              <p>£12.50</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </section>
+          <section class="cart">
+            <h2>Cart Summary</h2>
+            <p>Items in cart: £<span id="cart-count">0</span></p>
+            <p>Total: £<span id= "cart-totals">0.00</span></p>
+          </section>
+          
+        </main>
+        <!-- footer -->
         <footer>
-
+        <p> &copy; 2025 The Mud House Coffe Shop. All rights reserved</p>
         </footer>
+        
     </body>
+</html>
