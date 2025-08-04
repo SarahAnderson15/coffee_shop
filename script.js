@@ -1,22 +1,27 @@
-document.addEventListener("DOMContentLoaded", function (){
-    let cartCount = 0;
-    let cartTotal = 0;
+document.addEventListener("DOMContentLoaded", () =>{
+    function cart(){
+        let cartCount = 0;
+        let cartTotal = 0;
+        
+        const cartCount1 = document.getElementById("cart-count");
+        const cartTotal1 = document.getElementById("cart-totals");
+        const buttons = document.querySelectorAll(".add-to-cart");
 
-    const cartCountE1 = document.getElementById("cart-count");
-    const cartTotalE1 = document.getElementById("cart-totals");
-    const button = doucument.querySelectorAll(".add-to-cart");
+        buttons.forEach((btn) =>{
+            const product1 = btn.closest(".product");
+            if (!product1(price)) return;
 
-    button.forEach((button) => {
-        button.addEventListener("click", () => {
-         const product = button.closest(".product");
-         const price = parseFloat(product.dataset.price);
+            const priceString = product1.getAttribute("data-price") || "0";
+            const price = pareFloat(priceString);
+            if (isNaN(price)) return;
 
-         cartCount += 1;
-         cartTotal += price;
+            cartCount += 1;
+            cartTotal += price;
 
-         cartCountE1.textContent = cartCount;
-         cartTotalE1,this.textContent = cartTotal;
-         console.log(`Added to cart: ${product.dataset.name}(£${price})`)
-        });
-    });
-});
+            cartCount1.textContent = cartCount;
+            cartTotal1.textContent = cartTotal;
+
+        })
+    }
+})
+cart();
