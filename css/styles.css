@@ -7,6 +7,7 @@ body{
     font-weight: lighter;
     display: flex;
     flex-direction: column;
+    
 }
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -198,31 +199,21 @@ button{
     align-items: center;
   }
 }
- .address, .get-in-touch{
-    padding: 5px;
-    background-color:#ebc884;
-    width:500px;
-    height:400x;
-    text-align:center;
-    align-content: center;
-    border-radius: 5px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    padding-bottom: 10px;
-
+.opening_hours, .address, .get-in-touch {
+    flex: 1 1 300px;
+    min-width: 275px;
+    background-color: #f0e8d8;
+    padding:20px;
+    border-radius: 10px;
 }
-.opening_hours {
-    padding: 10px;
-    text-align: center;
-    margin: 0 auto;
-    display: inline-block;
-    background-color: #ebc884;
-    width: 500px;
-    border-radius: 4px;;
-
+.opening_hours i, .address i, .get-in-touch i{
+    font-size: 1.5rem;
+    color: #a0522d;
+    margin-bottom: 10px;
+    
+}
+.get-in-touch a{
+    color: #6d4018;
 }
 .opening_hours td{
     text-align: left;
@@ -263,18 +254,24 @@ button{
    padding: 20px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    align-content: center;
+   margin-left: auto;
+   margin-right: auto;
 }
-.form-group{
-    display: grid;
-    align-items: start;
-    margin-bottom: 15px;
-    grid-template-columns: 100px 1fr;
+.opening_hours table{
+    margin: 0 auto;
+    text-align: center;
 }
+.opening_hours td{
+    padding: 4px 8px;
+    white-space: nowrap;
+}
+
 label{
-  padding-top: 6px;
+  padding-right: 10px;;
   color:#6d4018;
   font-weight: bold;
-  
+  display: inline-block;
+  font-size: 24px;
 
 }
 input , textarea{
@@ -283,19 +280,53 @@ input , textarea{
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 14px;
+
 }
 textarea{
     resize: vertical;
     height: 80px;
 }
 .form-button{
-margin-top: 10px;
-color: #ebdcbf;
-padding: 10px 20px;
-border: none;
-cursor: pointer;
-
+ display: block;
+ width: 100%;
+ box-sizing: border-box;
+ margin-top: 10px;
+ background-color: #6d4018;
+ color: #ebdcbf;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
 }
+.form-button:hover{
+    background-color: #8b4513;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 40px;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.form-group{
+    display: grid;
+    align-items: start;
+    margin-bottom: 15px;
+    grid-template-columns: auto 1fr;
+    column-gap: 10px;
+}
+
+.contact-info div{
+    text-align: center;
+}
+@media (max-width: 768px){
+    .contact-info{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+}
+
 .two-column{
     display: flex;
     flex-wrap: wrap;
@@ -356,4 +387,10 @@ height: auto;
     table{
         font-size: 18px;
     }
+}
+footer{
+    text-align: left;
+    margin-top: auto;
+    bottom: 0;
+    font-size: 14px;
 }
