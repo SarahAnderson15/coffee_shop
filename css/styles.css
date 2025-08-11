@@ -14,7 +14,7 @@ h2{
 }
 h1{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 a{
     color:#ebdcbf;
@@ -49,7 +49,7 @@ text-align: center;;
     justify-content: center;
     position: relative;
     list-style: none;
- height: 50px;
+    height: 50px;
     font-size: 36px; 
     gap: 10px;
     flex-direction: column;
@@ -138,7 +138,6 @@ text-align: center;;
 .info{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     gap: 5px;
     padding-top: 50px;
     text-align: center;
@@ -237,18 +236,27 @@ button{
     padding: 10px;
     text-align: left;
 }
-.drink-menu td{
-    padding: 10px;
-    text-align: left;
+.drink-menu{
+    border-collapse: collapse;
+    width: 100%;
 }
-#intro, #books{
-    padding-top: 50px;
-    padding:10px;
-    border: 5px solid;
-    margin: 0 auto;
-    display: flex;
+.drink-menu td, th{
+    padding: 6px 12px;
+}
+.drink-menu td.dPrice{
+    text-align: right;
+    white-space: nowrap;
+}
+.signature{
+    text-align: center;
+}
+.menu-shortcut{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    
+}
 
-}
 .contact-form{
    width: 400px;
    background-color: #f2e9db;
@@ -287,4 +295,65 @@ padding: 10px 20px;
 border: none;
 cursor: pointer;
 
+}
+.two-column{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+.two-column .image, .two-column img{
+flex: 1 1 400px;
+min-width: 280px;
+max-width: 100%;
+height: auto;
+
+}
+.two-column .text{
+    flex: 1 1 400px;
+    min-width: 280px;
+}
+
+.fixed-img{
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .two-column{
+        flex-direction: column;
+        text-align: left;
+        font-size: 18px;
+    }
+}
+#sweetTreats table{
+    margin-left: auto;
+    margin-right: auto;
+}
+#food table{
+    margin-left:auto;
+    margin-right: auto;
+}
+#drinks {
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 768px){
+    p{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    table{
+        font-size: 18px;
+    }
 }
