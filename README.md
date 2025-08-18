@@ -6,6 +6,8 @@ website for a fictional cafe to promote their services
  - Contact page: where to find the cafe, opening times and and contact information and form.
  - Category page: holding links to the drinks menu, food menus
  - Product page: for the purchaseable products. 
+ - Responsive navigation bar between desktop and mobile view:
+   ![screenshot](assets/desktop-nav.jpg) ![screenshot](assets/mobile-nav.jpg) ![screenshot](assets/mob-nav2.jpg)
 
 
 ## Technologies used
@@ -27,6 +29,8 @@ website for a fictional cafe to promote their services
 
 
 ## Getting Started
+ 1. Clone the repository:
+ 2. Open 'index.html' in your browswer.
 
 ## Deployment
  - Deployement to GitHub Pages. The steps to deploy are as follows:
