@@ -249,13 +249,10 @@ button{
 }
 
 .contact-form{
-   width: 400px;
    background-color: #f2e9db;
-   padding: 20px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    align-content: center;
-   margin-left: auto;
-   margin-right: auto;
+  
 }
 .opening_hours table{
     margin: 0 auto;
