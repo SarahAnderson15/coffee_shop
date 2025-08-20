@@ -26,6 +26,7 @@ website for a fictional cafe to promote their services
 - I ran my code through a code validator to ensure there are no error:
    html : https://validator.w3.org/#validate_by_input ![screenshot](assets/html-checker.jpg)
    css :  https://jigsaw.w3.org/css-validator/  ![screenshot](assets/css-checker.jpg)
+   javascript : https://www.site24x7.com/tools/javascript-validator.html ![screenshot](assets/javascript-checker.jpg)
 
 
 ## Getting Started
